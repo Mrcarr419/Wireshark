@@ -6,7 +6,7 @@ Here im inpecting Packets using wireshark
 
 Checking for Echo pings
 
-Enterd (ip.addr == 142.250.1.139) to reduce information and contains only packets where either the source or the destination IP address matches the address.Now only two packet colors are used: light pink for ICMP protocol packets and light green for TCP (and HTTP, which is a subset of TCP) packets.
+Input (ip.addr == 142.250.1.139) to reduce information and contains only packets where either the source or the destination IP address matches the address. Now only two packet colors are used: light pink for ICMP protocol packets and light green for TCP (and HTTP, which is a subset of TCP) packets.
 
 <img width="1440" alt="Screenshot 2024-09-13 at 1 04 10 AM" src="https://github.com/user-attachments/assets/984d7f22-4aa5-4e20-a46a-d2088bc82ba4">
 
@@ -33,7 +33,7 @@ This provides detailed information about the TCP packet, including the source an
 
 Now I'm searching through udp.port == 53
 
-Domain Name System (query) subtree to expanded it, Scrolled down and double Queries. The Query that was looked at was (139.1.250.142.in-addr.arpa: type PTR, class IN)
+Domain Name System (query) subtree to expanded it, Scrolled down and double tapped Queries. The Query that was looked at was (139.1.250.142.in-addr.arpa: type PTR, class IN)
 the website that was queried is (opensource.google.com.)
 <img width="1440" alt="Screenshot 2024-09-13 at 1 35 05 AM" src="https://github.com/user-attachments/assets/3686b6d1-0d7d-410a-b4be-0163340f0782">
 
@@ -52,7 +52,7 @@ The Destination Address as specified in the Internet Protocol Version 4 subtree 
 <img width="1440" alt="Screenshot 2024-09-13 at 2 09 40 AM" src="https://github.com/user-attachments/assets/a5db222e-72ea-4e28-a69c-277149c006cf">
 
 Now I'm searching for data that presents 'Curl'
-This filters to packets containing web requests made with the curl command in this sample packet capture file.
+This filters to packets containing web requests made with the curl command in this packet capture file.
 
 <img width="1440" alt="Screenshot 2024-09-13 at 2 12 10 AM" src="https://github.com/user-attachments/assets/66f6afcd-f871-4b80-8434-9c8ad3fcc906">
 
